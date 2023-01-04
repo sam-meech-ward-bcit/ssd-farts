@@ -14,6 +14,12 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get("/burp", (req, res) => {
+  res.send({
+    message: "burp"
+  })
+})
+
 app.listen(8080, () => {
   console.log('Server started on port 8080')
 })
